@@ -8,19 +8,24 @@
     <script src="script.js"></script>
   </head>
   <body>
+    <div class="cursor-follow"></div>
+
     <header>
       <h1 class="gradient-text">----My Story Team----</h1>
+      <div class="button-container">
+        <button class="cool-btn" onclick="shortGoalBtn()">SHORT GOAL</button>
+        <button class="cool-btn" onclick="mediumGoalBtn()">MEDIUM GOAL</button>
+        <button class="cool-btn" onclick="longGoalBtn()">LONG GOAL</button>
+        <button class="cool-btn" onclick="connectBtn()">CONNECT</button>
+        <button class="cool-btn" onclick="removeBtn()">REMOVE</button>
+      </div>
     </header>
     <main>
-      <div id="board"></div>
+      <div id="board">
+        <!-- Magic here -->
+      </div>
     </main>
 
-    <footer>
-      <button class="cool-btn">SHORT GOAL</button>
-      <button class="cool-btn">MEDIUM GOAL</button>
-      <button class="cool-btn">LONG GOAL</button>
-      <button class="cool-btn">CONNECT</button>
-      <button class="cool-btn">REMOVE</button>
-    </footer>
+    <footer id="myFooter"></footer>
   </body>
 </html>
