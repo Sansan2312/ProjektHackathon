@@ -83,7 +83,21 @@ function Place(clickX, clickY, elementToPlace) {
   const y = clickY - rect.top;
 
   const newDiv = document.createElement("div");
-  newDiv.classList.add("board-child");
+
+  let addon;
+  switch (currentCursor) {
+    case short:
+      addon = "-sh";
+      break;
+    case medium:
+      addon = "-md";
+      break;
+    case long:
+      addon = "-lo";
+      break;
+  }
+
+  newDiv.classList.add("board-child" + addon);
 
   newDiv.style.left = `${x}px`;
   newDiv.style.top = `${y}px`;
